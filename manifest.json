@@ -3,10 +3,20 @@
   "name": "YoutubeSubFolder",
   "description": "Make your Youtube sub channel folder",
   "version": "1.0",
+  "oauth2": {
+    "client_id": "733811650442-480uo5f23en8n92h0qvlntr51oncpksa.apps.googleusercontent.com",
+    "scopes":["https://www.googleapis.com/auth/youtube"]
+  },
+  "permissions": [
+    "identity"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
   "content_scripts": [
     {
       "matches": ["*://*.youtube.com/*"],
-      "js": ["scripts/ysf.js"],
+      "js": ["scripts/Jquery-3.7.1.min.js","scripts/ysf.js"],
       "run_at": "document_idle"
     }
   ]

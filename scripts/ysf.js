@@ -1,9 +1,26 @@
-window.onload = function () {
-    if(document.querySelector('#guide-section-title')){
-        const e = document.querySelectorAll('#guide-section-title')[1];
-        e.insertAdjacentHTML("beforebegin", '<div class="container" style="display: flex; justify-content: space-between;"><div class="item">');
-        e.insertAdjacentHTML("afterend", '</div><div class="item"><yt-formatted-string link-inherit-color class="style-scope ytd-guide-section-renderer">aa</yt-formatted-string></div></div>');
-    }else{
-        alert("으아악");
-    }
-}
+// function handleMutations(mutationsList, observer) {
+//     for (const mutation of mutationsList) {
+//         if (mutation.type === 'childList') {
+//             if (document.querySelectorAll('ytd-guide-section-renderer').length === 5) {
+//                 const obj1 = document.querySelectorAll('ytd-guide-section-renderer')[0];
+//                 const obj = document.querySelectorAll('ytd-guide-section-renderer')[1];
+//                 if (obj) {
+//                     obj.querySelector('#items')
+//                     let par = obj.parentElement;
+//                     par.removeChild(obj);
+//                     observer.disconnect();
+//                     par.prototype.configureRendererStamper = function (){
+//                         return{
+//                             "p": {
+//                                 id: "tempee"
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+//
+// const observer = new MutationObserver(handleMutations);
+// observer.observe(document.body, {childList: true});
